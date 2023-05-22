@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Pannekoek",
+      "price": 10.99,
+      "category": "BreakFast",
+      "quantity" : 0
+    },
+    {
+      "id": 2,
+      "name": "Patatje",
+      "price": 1199,
+      "category": "Lunch",
+      "quantity" : 0
+    },
+    {
+      "id": 3,
+      "name": "Patatje XL",
+      "price": 1.05,
+      "category": "Dinner",
+      "quantity" : 0
+    },
+    {
+      "id": 4,
+      "name": "Mojito",
+      "price": 14000,
+      "category": "Drinks",
+      "quantity" : 0
+    }
+  ]
