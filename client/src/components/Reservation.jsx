@@ -2,7 +2,7 @@
 
 const Reservation = () => {
   return (
-    <section className="flex flex-col justify-evenly items-center">
+    <section id="Reservation" className="flex flex-col justify-evenly items-center">
 
         
        <h1 className="text-2xl bg-[#969287] rounded-full p-5 font-light text-white">Reserveer uw tafel</h1> 

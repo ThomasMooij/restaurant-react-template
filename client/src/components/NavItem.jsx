@@ -1,4 +1,3 @@
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import {Link} from 'react-scroll';
 
 const NavItem = ({ 

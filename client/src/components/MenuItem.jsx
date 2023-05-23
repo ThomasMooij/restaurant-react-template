@@ -16,10 +16,10 @@ const MenuItem = ({ category }) => {
   } = useCart();
 
   return (
-    <div className="w-screen h-screen max-h-full max-w-full flex justify-center">
+    <div className="w-screen h-screen max-h-full max-w-full flex justify-center ">
       <div className="flex flex-col gap-2">
         {filteredItems.map((item) => (
-          <div className="flex gap-4 items-center" key={item.id}>
+          <div className="flex gap-4 items-center bg-[#f5f5dc] rounded-[15px]" key={item.id}>
             <div className="rounded-lg shadow-lg p-6 border-yellow-300">
               <h2 className="text-xl font-bold mb-4">{item.name}</h2>
               <p className="text-gray-700">{item.desc}</p>
@@ -58,7 +58,7 @@ const MenuItem = ({ category }) => {
               src={item.image}
               alt={item.name}
             /> */}
-            <p>IMAGE</p>
+            <p className="p-4">IMAGE</p>
           </div>
         ))}
       </div>

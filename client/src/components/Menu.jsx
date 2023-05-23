@@ -14,9 +14,8 @@ const Menu = () => {
 
   return (
     <section id='Menu' className='w-screen h-screen flex justify-center '>
-
          {/* MENU WRAPPER */}
-         <div className="w-[80%] h-[80%] border border-gray-300 rounded-lg shadow-md p-4 flex  flex-col gap-8">
+         <div className="w-[80%] h-[80%] border border-gray-300 rounded-lg shadow-md p-4 flex  flex-col gap-8 bg-[#dbdbc3]">
           <header className="flex space-x-8 p-4 mx-auto">
             <button 
                 className={`${menuItem === 'BreakFast' ? ' border-b-2 border-green-600 text-xl font-medium ' : 'text-xl font-medium '}`}        

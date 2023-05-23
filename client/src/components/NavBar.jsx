@@ -14,11 +14,11 @@ const NavBar = ({ topPage, selectedPage, setSelectedPage }) => {
 
   let cartTotal = 0;
 
-  if (cartItems.quantity && Array.isArray(cartItems.quantity)) {
-    cartItems.quantity.map((item) => {
-      cartTotal += item.quantity;
-    });
-  }
+  cartItems.map((cartItem) => {
+    cartTotal += cartItem.quantity
+  })
+
+  console.log(cartTotal)
 
   return (
     <nav className={`${backgroundColor} fixed top-0 z-2999 w-full p-4 mb-3`}>
@@ -55,19 +55,19 @@ const NavBar = ({ topPage, selectedPage, setSelectedPage }) => {
           />
         </div>
         {/* CONTACT INFO */}
-        <div className="hidden md:flex">
-          <article className="border-l-2 divide-orange-600 p-4 grid grid-cols-3 place-items-center">
-            <div>
+        <div className="">
+          <article className=" md:border-l-2 divide-orange-600 p-4 grid grid-cols-3 place-items-center">
+            <div className="">
               <Link to="/cart" className="bg-white p-4 rounded-[50%]">
                 <ShoppingCartOutlinedIcon />
-                {cartItems.length}
+                {cartTotal}
               </Link>
             </div>
-            <div className="flex flex-col items-center  cursor-pointer">
+            <div className="hidden md:flex flex-col items-center  cursor-pointer">
               <span>ENG</span>
               <ArrowDropDownIcon />
             </div>
-            <div>
+            <div className="hidden md:block">
               <h2>Address: SomePlace 111</h2>
               <h2>Phone: SomeNumber</h2>
             </div>

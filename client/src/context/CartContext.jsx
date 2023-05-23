@@ -44,7 +44,6 @@ const localCart = JSON.parse(localStorage.getItem("cartItems"))
       }
     })
   }
-  
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
     0

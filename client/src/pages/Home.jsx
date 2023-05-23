@@ -3,6 +3,7 @@ import CartAside from '../components/CartAside'
 import Landing from '../components/Landing'
 import Menu from '../components/Menu'
 import NavBar from '../components/NavBar'
+import Photos from '../components/Photos'
 import Reservation from '../components/Reservation'
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
         <Landing />
         <Menu />
         <Reservation />
+        <Photos />
         
     </>
   )
