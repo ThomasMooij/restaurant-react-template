@@ -30,7 +30,6 @@ const Home = () => {
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
       />
-        <CartAside />
         <Landing />
         <Menu />
         <Reservation />

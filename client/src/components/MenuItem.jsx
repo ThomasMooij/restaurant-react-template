@@ -22,7 +22,7 @@ const MenuItem = ({ category }) => {
           <div className="flex gap-4 items-center" key={item.id}>
             <div className="rounded-lg shadow-lg p-6 border-yellow-300">
               <h2 className="text-xl font-bold mb-4">{item.name}</h2>
-              <p className="text-gray-700">{item.description}</p>
+              <p className="text-gray-700">{item.desc}</p>
               <div className="flex gap-4 items-center mt-6">
                 <span className="text-gray-600 font-bold">{item.price}</span>
 
@@ -53,11 +53,12 @@ const MenuItem = ({ category }) => {
                 ) : null}
               </div>
             </div>
-            <img
+            {/* <img
               className="w-[150px] h-[150px] rounded-[50%]"
               src={item.image}
               alt={item.name}
-            />
+            /> */}
+            <p>IMAGE</p>
           </div>
         ))}
       </div>
