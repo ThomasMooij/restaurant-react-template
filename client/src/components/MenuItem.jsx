@@ -9,9 +9,7 @@ const MenuItem = ({ category }) => {
     increaseCart,
     decreaseCart,
     getItemQuantity,
-    removeFromCart,
     cartItems,
-    cartOpen,
     setCartOpen,
   } = useCart();
 

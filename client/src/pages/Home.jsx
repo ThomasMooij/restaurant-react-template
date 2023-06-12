@@ -25,8 +25,7 @@ const Home = () => {
   },[])
   return (
     <>
-  
-    <NavBar 
+     <NavBar 
           topPage = {topPage}
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
